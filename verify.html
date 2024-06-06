@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="content-box">
+            <p class="sign-in-text">Please verify the OTP to login</p>
+            <div class="input-box-container">
+                <p class="contact-number-text">Enter the OTP</p>
+                <input type="number" required class="mobile-number-box" id="mobile-number-box" min="1000" max="9999"
+                    oninput="validateOtp()">
+                <p id="alert"></p>
+            </div>
+            <button class="btn-yellow" onclick="verifyOtp()">Verify OTP</button>
+        </section>
+        <section class="logo-container">
+            <img src="sdvvss.svg" alt="logo" class="logo">
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
